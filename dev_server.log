@@ -7,7 +7,11 @@
    - Network:       http://192.168.0.2:3000
 
  ✓ Starting...
- ✓ Ready in 1074ms
- ○ Compiling / ...
-You provided a `value` prop to a form field without an `onChange` handler. This will render a read-only field. If the field should be mutable use `defaultValue`. Otherwise, set either `onChange` or `readOnly`.
- GET / 200 in 5.4s (compile: 4.7s, render: 726ms)
+Attention: Next.js now collects completely anonymous telemetry regarding usage.
+This information is used to shape Next.js' roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+https://nextjs.org/telemetry
+
+ ✓ Ready in 1144ms
+ ○ Compiling /styles ...
+ GET /styles 200 in 5.8s (compile: 5.5s, render: 290ms)
