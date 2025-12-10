@@ -10,24 +10,24 @@ const config: Config = {
   theme: {
     extend: {
         colors: {
-            primary: "#135bec",
-            "background-light": "#f6f6f8",
-            "background-dark": "#101622",
+            primary: "#3b82f6",
+            "background-light": "#f3f4f6",
+            "background-dark": "#111827",
             "card-light": "#ffffff",
-            "card-dark": "#1a202c",
+            "card-dark": "#1f2937",
             "border-light": "#e2e8f0",
             "border-dark": "#2d3748",
         },
         fontFamily: {
             sans: ['var(--font-inter)', 'sans-serif'],
-            display: ["var(--font-manrope)", "sans-serif"],
+            display: ["var(--font-space-grotesk)", "sans-serif"],
             serif: ['var(--font-playfair-display)', 'serif'],
             tech: ['var(--font-orbitron)', 'sans-serif'],
             pixel: ['var(--font-vt323)', 'monospace'],
             hand: ['var(--font-architects-daughter)', 'cursive'],
         },
         borderRadius: {
-            DEFAULT: "0.25rem",
+            DEFAULT: "0.5rem",
             lg: "0.5rem",
             xl: "0.75rem",
             "2xl": "1rem",

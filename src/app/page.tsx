@@ -1,3 +1,6 @@
+import Image from "next/image";
+import Link from "next/link";
+
 export default function Home() {
     return (
         <div className="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white font-display antialiased transition-colors duration-200">
@@ -9,10 +12,10 @@ export default function Home() {
                             <div className="size-8 flex items-center justify-center bg-primary rounded-lg text-white">
                                 <span className="material-symbols-outlined" style={{ fontSize: '20px' }}>design_services</span>
                             </div>
-                            <h2 className="text-lg font-bold leading-tight tracking-tight">DesignStudio</h2>
+                            <h2 className="text-lg font-bold leading-tight tracking-tight">UniverseDev</h2>
                         </div>
                         <nav className="hidden md:flex items-center gap-6">
-                            <a className="text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal transition-colors" href="#">Styles</a>
+                            <Link className="text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal transition-colors" href="/styles">Styles</Link>
                             <a className="text-primary text-sm font-bold leading-normal" href="#">Layouts</a>
                             <a className="text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal transition-colors" href="#">Components</a>
                             <a className="text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal transition-colors" href="#">Export</a>
@@ -249,7 +252,7 @@ export default function Home() {
                         <a className="text-slate-500 dark:text-slate-400 hover:text-primary dark:hover:text-primary transition-colors text-sm font-normal leading-normal" href="#">Terms of Service</a>
                         <a className="text-slate-500 dark:text-slate-400 hover:text-primary dark:hover:text-primary transition-colors text-sm font-normal leading-normal" href="#">Help Center</a>
                     </div>
-                    <p className="text-slate-400 dark:text-slate-600 text-sm font-normal leading-normal">© 2024 DesignStudio. All rights reserved.</p>
+                    <p className="text-slate-400 dark:text-slate-600 text-sm font-normal leading-normal">© 2024 UniverseDev. All rights reserved.</p>
                 </footer>
             </div>
         </div>
