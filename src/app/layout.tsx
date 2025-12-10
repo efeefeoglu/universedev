@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Inter, Space_Grotesk, Playfair_Display, Cinzel, Orbitron, VT323, Homemade_Apple, Architects_Daughter } from 'next/font/google';
+import { Inter, Manrope, Space_Grotesk, Playfair_Display, Cinzel, Orbitron, VT323, Homemade_Apple, Architects_Daughter } from 'next/font/google';
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -11,6 +11,12 @@ const inter = Inter({
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-inter',
+});
+
+const manrope = Manrope({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-manrope',
 });
 
 const spaceGrotesk = Space_Grotesk({
@@ -69,7 +75,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${spaceGrotesk.variable} ${playfairDisplay.variable} ${cinzel.variable} ${orbitron.variable} ${vt323.variable} ${homemadeApple.variable} ${architectsDaughter.variable}`}>
+    <html lang="en" className={`${inter.variable} ${manrope.variable} ${spaceGrotesk.variable} ${playfairDisplay.variable} ${cinzel.variable} ${orbitron.variable} ${vt323.variable} ${homemadeApple.variable} ${architectsDaughter.variable}`}>
       <head>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons&display=optional" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=optional" rel="stylesheet" />
