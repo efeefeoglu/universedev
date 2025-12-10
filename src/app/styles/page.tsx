@@ -144,6 +144,90 @@ export default function StylesPage() {
                         </div>
                     </section>
 
+                    {/* Atmosphere & Contrast Section */}
+                    <section className="mb-16">
+                        <div className="flex items-center gap-4 mb-6 border-b border-gray-200 dark:border-gray-700 pb-4">
+                            <h3 className="text-2xl font-display font-bold">Atmosphere &amp; Contrast</h3>
+                            <span className="px-3 py-1 bg-gray-100 dark:bg-gray-800 text-xs font-medium uppercase tracking-wider rounded-full text-gray-600 dark:text-gray-300">Tone &amp; Mood</span>
+                        </div>
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                            {/* Luxury */}
+                            <label className="group relative cursor-pointer">
+                                <input className="peer sr-only" name="style_atmosphere" type="checkbox" value="luxury" />
+                                <div className="bg-card-light dark:bg-card-dark rounded-xl overflow-hidden border-2 border-transparent peer-checked:border-primary peer-checked:ring-2 peer-checked:ring-primary/20 transition-all shadow-sm hover:shadow-md h-full flex flex-col">
+                                    <div className="aspect-[4/3] bg-[#1a1a1a] p-6 flex flex-col items-center justify-center text-center relative">
+                                        <div className="border border-[#D4AF37] p-4 absolute inset-4"></div>
+                                        <h4 className="text-[#D4AF37] font-serif italic text-2xl">Luxury</h4>
+                                        <div className="w-8 h-[1px] bg-[#D4AF37] mt-2"></div>
+                                    </div>
+                                    <div className="p-4 flex justify-between items-center">
+                                        <span className="font-medium text-sm">Luxury Gold</span>
+                                        <div className="w-5 h-5 border-2 border-gray-300 dark:border-gray-600 rounded-full peer-checked:bg-primary peer-checked:border-primary flex items-center justify-center transition-colors">
+                                            <span className="material-icons text-white text-[12px] opacity-0 peer-checked:opacity-100">check</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </label>
+                            {/* High Contrast */}
+                            <label className="group relative cursor-pointer">
+                                <input className="peer sr-only" name="style_atmosphere" type="checkbox" value="high_contrast" />
+                                <div className="bg-card-light dark:bg-card-dark rounded-xl overflow-hidden border-2 border-transparent peer-checked:border-primary peer-checked:ring-2 peer-checked:ring-primary/20 transition-all shadow-sm hover:shadow-md h-full flex flex-col">
+                                    <div className="aspect-[4/3] flex">
+                                        <div className="w-1/2 bg-black flex items-center justify-center">
+                                            <span className="text-white font-bold text-2xl">B</span>
+                                        </div>
+                                        <div className="w-1/2 bg-yellow-400 flex items-center justify-center">
+                                            <span className="text-black font-bold text-2xl">W</span>
+                                        </div>
+                                    </div>
+                                    <div className="p-4 flex justify-between items-center">
+                                        <span className="font-medium text-sm">High Contrast</span>
+                                        <div className="w-5 h-5 border-2 border-gray-300 dark:border-gray-600 rounded-full peer-checked:bg-primary peer-checked:border-primary flex items-center justify-center transition-colors">
+                                            <span className="material-icons text-white text-[12px] opacity-0 peer-checked:opacity-100">check</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </label>
+                            {/* Low Contrast */}
+                            <label className="group relative cursor-pointer">
+                                <input className="peer sr-only" name="style_atmosphere" type="checkbox" value="low_contrast" />
+                                <div className="bg-card-light dark:bg-card-dark rounded-xl overflow-hidden border-2 border-transparent peer-checked:border-primary peer-checked:ring-2 peer-checked:ring-primary/20 transition-all shadow-sm hover:shadow-md h-full flex flex-col">
+                                    <div className="aspect-[4/3] bg-gray-100 dark:bg-gray-800 p-4 flex flex-col items-center justify-center text-center">
+                                         <div className="w-16 h-16 bg-gray-200 dark:bg-gray-700 rounded-full mb-3 flex items-center justify-center">
+                                              <div className="w-8 h-8 bg-gray-300 dark:bg-gray-600 rounded-full"></div>
+                                         </div>
+                                         <p className="text-gray-400 dark:text-gray-500 font-medium text-sm">Soft Tones</p>
+                                    </div>
+                                    <div className="p-4 flex justify-between items-center">
+                                        <span className="font-medium text-sm">Low Contrast</span>
+                                        <div className="w-5 h-5 border-2 border-gray-300 dark:border-gray-600 rounded-full peer-checked:bg-primary peer-checked:border-primary flex items-center justify-center transition-colors">
+                                            <span className="material-icons text-white text-[12px] opacity-0 peer-checked:opacity-100">check</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </label>
+                            {/* Monochrome */}
+                            <label className="group relative cursor-pointer">
+                                <input className="peer sr-only" name="style_atmosphere" type="checkbox" value="monochrome" />
+                                <div className="bg-card-light dark:bg-card-dark rounded-xl overflow-hidden border-2 border-transparent peer-checked:border-primary peer-checked:ring-2 peer-checked:ring-primary/20 transition-all shadow-sm hover:shadow-md h-full flex flex-col">
+                                    <div className="aspect-[4/3] bg-zinc-900 p-4 flex flex-col gap-2">
+                                        <div className="h-1/2 bg-zinc-800 rounded"></div>
+                                        <div className="flex gap-2 h-1/2">
+                                            <div className="flex-1 bg-zinc-700 rounded"></div>
+                                            <div className="flex-1 bg-zinc-600 rounded"></div>
+                                        </div>
+                                    </div>
+                                    <div className="p-4 flex justify-between items-center">
+                                        <span className="font-medium text-sm">Monochrome</span>
+                                        <div className="w-5 h-5 border-2 border-gray-300 dark:border-gray-600 rounded-full peer-checked:bg-primary peer-checked:border-primary flex items-center justify-center transition-colors">
+                                            <span className="material-icons text-white text-[12px] opacity-0 peer-checked:opacity-100">check</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                    </section>
+
                     {/* Ultra-minimal Section */}
                     <section className="mb-16">
                         <div className="flex items-center gap-4 mb-6 border-b border-gray-200 dark:border-gray-700 pb-4">
